@@ -56,42 +56,45 @@
 
     </RelativeLayout>
 
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/reglageszone"
-        android:layout_below="@+id/favorisbutton"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="11dp">
+        android:layout_below="@+id/favorisbutton">
 
-        <TextView
-            android:text="Réglage de l'heure de notification de la bière du jour :"
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textereglages"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:textAppearance="@style/TextAppearance.AppCompat" />
+            android:id="@+id/reglageszone"
+            android:layout_marginTop="11dp">
 
-        <TimePicker
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/timePicker"
-            android:layout_below="@id/textereglages"
-            android:layout_marginTop="11dp"/>
+            <TextView
+                android:text="Réglage de l'heure de notification de la bière du jour :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textereglages"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
 
-        <Button
-            android:text="Enregistrer"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/enregbutton"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_below="@+id/timePicker"
-            android:layout_marginTop="11dp"
-            android:layout_centerHorizontal="true"/>
+            <TimePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/timePicker"
+                android:layout_below="@id/textereglages"
+                android:layout_marginTop="11dp"/>
 
-    </RelativeLayout>
+            <Button
+                android:text="Enregistrer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/enregbutton"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_below="@+id/timePicker"
+                android:layout_marginTop="11dp"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+    </ScrollView>
 
     <RelativeLayout
         android:layout_width="match_parent"
