@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         minute = sp.getInt("minute", 0);
 
         long notif_pop = ((hour - currentHour)*3600 + (minute - currentMinute)*60 - currentSecond)*1000;
-        
+
         if (notif_pop < 0) {
             notif_pop = 86400000 + notif_pop;
         }
