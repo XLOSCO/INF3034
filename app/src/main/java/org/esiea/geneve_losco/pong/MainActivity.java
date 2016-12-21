@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         hour = sp.getInt("hour", 12);
         minute = sp.getInt("minute", 0);
 
-        long notif_pop = ((hour - currentHour)*3600 + (minute - currentMinute)*60 - currentSecond)*1000;
+        long notif_pop = ((hour - currentHour)*3600 + (minute - currentMinute)*60 - currentSecond)*1000; // calcul du delai
         if (notif_pop < 0) {
             notif_pop = 86400000 + notif_pop;
         }
